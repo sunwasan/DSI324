@@ -1,0 +1,36 @@
+{
+    "C:\\Users\\User\\Desktop\\project\\DSI324\\pdf\\อว. รัฐศาสตรบัณฑิต (ปรับปรุง พ.ศ.2566) .pdf": {
+        "faculty_name_th": "คณะรัฐศาสตร์",
+        "faculty_name_en": "Faculty of Political Science",
+        "campus": "ศูนย์รังสิต",
+        "curr_id": "25400051100189",
+        "curr_type": "หลักสูตรปริญญาตรีทางวิชาการ",
+        "careers": [
+            "นักการเมือง",
+            "หน่วยงานราชการ",
+            "ปลัดอำเภอ",
+            "นักพัฒนาชุมชน",
+            "นักปกครอง",
+            "นักวิชาการ",
+            "นักการทูต",
+            "องค์กรระหว่างประเทศ",
+            "เจ้าหน้าที่บุคคล",
+            "นักธุรกิจ",
+            "ผู้จัดการทั่วไป",
+            "ผู้สื่อข่าว"
+        ],
+        "curr-name-th": "หลักสูตรรัฐศาสตรบัณฑิต",
+        "curr-name-en": "Bachelor of Political Science Program",
+        "degree_full_th": "รัฐศาสตรบัณฑิต",
+        "degree_full_en": "Bachelor of Political Science",
+        "degree_abr_th": "ร.บ.",
+        "degree_abr_en": "B.Pol.Sc.",
+        "num-major": "3",
+        "approved-date": "2566-04-25",
+        "cat-name": "โครงการปกติ",
+        "organization": [
+            "หลักสูตรของสถาบันโดยเฉพาะ"
+        ],
+        "lang": "จัดการศึกษาภาษาไทย"
+    }
+}
