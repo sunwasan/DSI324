@@ -74,7 +74,7 @@ key_explanation = [
   },
   {
     "key": "approved-date",
-    "topic": "วันที่อนุมัติหลักสูตร **in YYYY-MM-DD format**",
+    "topic": "วันที่อนุมัติหลักสูตร **in YYYY-MM-DD format** **year should be in พ.ศ.**",
     "topic_number": "1.4.6"
   },
   {
@@ -193,20 +193,19 @@ def extract_sector_1(json_file_path: str) -> dict:
     # Return response as {pdf_path: extracted_json}
     return {pdf_file_path: response_json}
 
-
-import json 
-from tqdm import tqdm
-chunks_dir = r"C:\Users\User\Desktop\project\DSI324\chunks"
-dest_dir = r"C:\Users\User\Desktop\project\DSI324\res\sector_1"
-if not os.path.exists(dest_dir):
-    os.makedirs(dest_dir)
-    
-all_chunks = os.listdir(chunks_dir)
-
-for json_file in tqdm(all_chunks):
-    json_file_path = os.path.join(chunks_dir, json_file)
-    result_dict = extract_sector_1(json_file_path)
-    json_file_name = os.path.basename(json_file_path)
-    with open(os.path.join(dest_dir, json_file_name), 'w', encoding='utf-8') as f:
-        json.dump(result_dict, f, ensure_ascii=False, indent=4)
+if __name__ == "__main__":
+    from tqdm import tqdm
+    chunks_dir = r"C:\Users\User\Desktop\project\DSI324\chunks"
+    dest_dir = r"C:\Users\User\Desktop\project\DSI324\res\sector_1"
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
         
+    all_chunks = os.listdir(chunks_dir)
+
+    for json_file in tqdm(all_chunks):
+        json_file_path = os.path.join(chunks_dir, json_file)
+        result_dict = extract_sector_1(json_file_path)
+        json_file_name = os.path.basename(json_file_path)
+        with open(os.path.join(dest_dir, json_file_name), 'w', encoding='utf-8') as f:
+            json.dump(result_dict, f, ensure_ascii=False, indent=4)
+            
